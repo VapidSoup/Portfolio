@@ -1,0 +1,545 @@
+/*font for css */
+@font-face {
+    font-family: 'Jacquard';
+    src: url(Jacquard24-Regular.ttf);
+}
+
+/* Main Landing Page Container */
+.landingMainBox {
+    width: 100%;
+    height: 100%; /* Ensure it takes the full viewport height */
+    background-color: transparent;
+    position: relative; /* Ensure the content stacks properly over the forest background */
+    z-index: 1; /* Keeps the content above the forest background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Invisible Letter Box for Header */
+.invisLetterBox {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    padding-top: 15px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, serif;
+    text-align: center;
+    justify-content: center;
+    background-color: transparent;
+    font-family: 'Jacquard';
+    font-size: 400%;
+    text-decoration: underline solid #a4c077;
+    color: #a4c077;
+    align-items: center; /* Vertically center the text */
+    z-index: 2; /* Stays above the forest */
+}
+
+/* Flexbox for Left and Right Content */
+.leftRightBox {
+    width: 100%;
+    height: 100px; /* Remaining height after the invisLetterBox */
+    display: flex;
+    justify-content: center; /* Space between the left and right boxes */
+    box-sizing: border-box;
+}
+
+/* Left Content Box */
+.leftNamePlate {
+    white-space: normal; /* Allows text to wrap */
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    width: 735px;
+    height: 100px; /* Adjusts height dynamically based on content */
+    font-size: medium;
+    border-radius: 29px;
+    background-color: transparent;
+    margin-left: 15px;
+    font-family: 'Jacquard';
+    font-size: 175%;
+    padding-top: 10px;
+    justify-content: center; /* Centers the text vertically */
+    align-items: center; /* Centers the text horizontally */
+    text-align: center; /* Centers text within each line */
+    line-height: 3px;
+    z-index: 2; /* Ensures it's above the background */
+}
+
+/* Right Content Box */
+.rightContentBox {
+    width: 700px;
+    height: 450px;
+    background-color: white; /* Optional: Add background for right content */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add some depth */
+    z-index: 2; /* Ensure it's above the background */
+}
+
+
+.background-forest {
+  position: fixed; /* Keeps it in place as you scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Covers the entire viewport */
+  z-index: -1; /* Ensures it stays behind all content */
+  overflow: hidden;
+  background-color: #ececec; /* Sky color or transparent if none */
+}
+
+/* Trees */
+.tree-container .tree {
+  position: absolute;
+  bottom: 0;
+  height: 100px; /* Adjust size as needed */
+  width: 50px;
+  background-color: #c8e0a0;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* Background Trees */
+.background-tree {
+  position: absolute;
+  bottom: 0;
+  left: 22%;
+  height: 300px;
+  width: 200px;
+  background-color: #c8e0a0;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.background-tree2 {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    height: 250px;
+    width: 200px;
+    background-color: #b5c897;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); 
+}
+
+.background-tree3 {
+    position: absolute;
+    bottom: 0;
+    left: 41%;
+    height: 275px;
+    width: 200px;
+    background-color: #bfdb92;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); 
+}
+
+.background-tree4 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 175px;
+    width: 150px;
+    background-color: #a4c077;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); 
+}
+
+.background-tree5 {
+    position: absolute;
+    bottom: 0;
+    left: 58%;
+    height: 310px;
+    width: 200px;
+    background-color: #c8e0a0;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); 
+}
+
+.background-tree6 {
+    position: absolute;
+    bottom: 0;
+    left: 65%;
+    height: 290px;
+    width: 200px;
+    background-color: #c2df93;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); 
+}
+
+/* Sun */
+.sun {
+  position: absolute;
+  top: 90%; /* Starts at the center */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 480px;
+  height: 480px;
+  background-color: #E7E1A0;
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(255, 255, 0, 0.8);
+}
+
+
+/* box to hold nav*/
+.navHoldBox {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: #ececec;
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    z-index: 2;
+    justify-content: center;
+    border-bottom: #979775 solid 2px;
+    border-top: #979775 solid 2px;
+    transition: all 0.3s ease;
+}
+
+/*nav boxes for nav*/
+.navBox {
+    width: 160px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    box-shadow: inset 3px;
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.4);
+    color: #979775;
+    font-family: 'Jacqaurd';
+    font-size: 150%;
+    cursor: pointer;
+    border: #939f81 solid 2px;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+.sticky-wrapper {
+    height: 80px; /* Matches the navbar height */
+    width: 100%;
+}
+  
+.navHoldBox.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ececec;
+    z-index: 100; /* Ensure it stays above other elements */
+}
+  
+.sticky-wrapper .navHoldBox.sticky + .sticky-wrapper {
+    height: 80px; /* Set to the same height as the navbar */
+}
+
+/*under line for any text*/
+.underlineText {
+    text-decoration: underline black;
+    font-size: 200%;
+}
+
+/*tester for the sun movement*/
+.invisTester {
+    height: 2000px
+}
+
+/* ----here we start the css for the about section---- */
+.aboutTextBox {
+    height: 650px;
+    width: 80%;
+    display: flex;
+    border-radius: 35px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: rgba(151, 151, 117, 0.65); */
+    box-shadow: inset 0px 0px 400px rgba(151, 151, 117, 0.95);
+    margin-top: 25px;
+}
+
+.aboutCenterBox {
+    height: 95%;
+    width: 95%;
+    background-color: rgba(255, 255, 255, 0.34);
+    display: flex;
+    border-radius: 35px;
+    flex-direction: column;
+}
+
+.aboutTitle {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    border-bottom: #c6c6a8 solid 2px;
+    color: #979775;
+    font-family: 'Jacquard';
+    font-size: 200%;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftPicAbout {
+    width: 40%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-self: center;
+    justify-content: end;
+    align-items: center;
+    background-color: transparent;
+    margin-left: 10px;
+    border: black solid 1px;
+    border-radius: 25px;
+}
+
+.photoPickerButtons {
+    width: 5px;
+    height: 10px;
+    border-radius: 20px;
+    background-color: rgba(148, 158, 115, 0.35);
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    flex-direction: column;
+    cursor: pointer;
+    align-self: center;
+}
+
+#photo-picker {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-bottom: 10px;
+  gap: 5px; 
+}
+
+.aboutCarryBox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.rightTextAbout {
+    display: flex;
+    width: 55%;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    flex-direction: column;
+    justify-self: right;
+    align-self: self-end;
+    margin-right: 20px;
+    padding-top: 2%;
+}
+
+/* this is the section for the projects section */
+
+.projectInvisBox {
+    width: 80%;
+    height: 525px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.projectTitle {
+    width: 100%;
+    height: 50px;
+    border-bottom: #c6c6a8 solid 2px;
+    color: #979775;
+    display: flex;
+    font-family: 'Jacquard';
+    font-size: 200%;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectDisplayBox {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    flex-wrap: wrap;
+    background-color: rgba(204, 200, 159, 0.5);
+    border-radius: 35px;
+    margin-top: 25px;
+}
+
+.projectPicBox1 {
+    height: 95%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    margin-left: 2%;
+    background-image: url("../image/venuesnap.png");
+    background-size: contain; 
+    background-position: center;
+}
+
+.projectPicBox2 {
+    height: 95%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    margin-left: 2%;
+    background-image: url("../image/Screenshot-1.png");
+    background-size: cover; 
+    background-position: center;
+}
+
+.projectDescriptionBox {
+    width: 80%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-self: right;
+    flex-wrap: wrap;
+}
+
+.projectTitles {
+    width: 99%;
+    height: 50px;
+    border-bottom: #c6c6a8 solid 2px;
+    color: #979775;
+    display: flex;
+    font-family: 'Jacquard';
+    font-size: 175%;
+    justify-content: left;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.projectDescription {
+    width: 100%;
+    height: 65%;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+
+/* this is now the section for the timeline section*/
+
+.timelineHoldBox {
+    width: 80%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.timelineTitle {
+    width: 100%;
+    height: 50px;
+    border-bottom: #c6c6a8 solid 2px;
+    color: #979775;
+    display: flex;
+    font-family: 'Jacquard';
+    font-size: 200%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.timelineTextBox {
+    width: 100%;
+    height: 200px;
+    border-left: #979775 solid 2px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    background-color: rgba(236, 235, 228, 0.5);
+}
+
+/* .timelineTextBox::before {
+    content: "";
+    width: 25%;
+    height: 0%;
+    border-top: #979775 dashed 2px;
+    border: black solid 1px;
+} */
+
+.timelineTextTitle {
+    width: 35%;
+    height: 40px;
+    color: #788564;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: underline;
+    padding-left: 5%;
+    border-top: #979775 dashed 2px;
+}
+
+.timelineTextDesc {
+    height: 80%;
+    width: 100%;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 10px;
+}
+
+/* this now continues to the contact section */
+
+.contactMainBox {
+    width: 80%;
+    height: 650px;
+    /* background-color: rgba(224, 210, 177, 0.45); */
+    box-shadow: inset 0px 0px 400px rgba(224, 210, 177, 0.95);
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contactTitleBox {
+    width: 100%;
+    height: 50px;
+    border-bottom: #788564 solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Jacquard';
+    color: #788564;
+    font-size: 200%;
+}
+
+.contactContentBox {
+    width: 95%;
+    height: 85%;
+    background-color: rgba(252, 252, 252, 0.5);
+    border-radius: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.contactLeftText{
+    width: 50%;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 20px;
+    border: black solid 2px;
+}
+
+.underlinedText {
+    text-decoration: underline;
+}
+/* this is going to be small pic boxes to be used throughout code*/
+
+.smallPicGitHub {
+    width: 50px;
+    height: 50px;
+}
