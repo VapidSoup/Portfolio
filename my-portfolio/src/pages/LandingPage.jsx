@@ -128,8 +128,8 @@ const LandingPage = () => {
             <div ref={(el) => (sectionRef.current[3] = el)} className="contactTitleBox">Contact Me!</div>
             <div className="contactContentBox">
               <div className="contactLeftText"><h3>Here are some of my links & contact info!</h3> 
-                <br/> <a href="https://github.com/VapidSoup" target='_blank' rel='noreferrer'>Github</a>
-                <br/> <a href="https://www.linkedin.com/in/dillon-regular-5a68aa283/" target="_blank" rel="noreferrer">Linkin</a>
+                <br/> <a href="https://github.com/VapidSoup" target='_blank' rel='noreferrer'>Github <div className="linkPic"></div></a>
+                <br/> <a href="https://www.linkedin.com/in/dillon-regular-5a68aa283/" target="_blank" rel="noreferrer">LinkedIn <div className="linkPic"></div></a>
                 <br/> <p>
         If you'd like to hear from me, or like to hear about what I'm currently working on, you can reach me at{' '}
         <span 
@@ -138,10 +138,12 @@ const LandingPage = () => {
           style={{ cursor: 'pointer', textDecoration: 'underline' }}
           title="Click to copy email"
         >
-          {email}
+          {email}<div className="clipboardPic"></div>
         </span>
       </p>
       {copySuccess && <p style={{ color: 'green' }}>{copySuccess}</p>}
+                </div>
+                <div className="funDesignPic">
                 </div>
             </div>
           </div>
