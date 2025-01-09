@@ -569,3 +569,136 @@ a {
     flex-direction: column;
     flex-wrap: wrap;
 }
+
+/* General Mobile Styling */
+
+/* Mobile-first layout */
+@media (max-width: 768px) {
+    /* Main container to stack elements vertically on smaller screens */
+    .landingMainBox {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 10px;
+    }
+
+    /* Adjust the invisLetterBox for smaller screens */
+    .invisLetterBox {
+        font-size: 2rem; /* Adjust font size */
+        padding: 10px;
+    }
+
+    /* Adjust left and right content boxes for mobile */
+    .leftRightBox {
+        flex-direction: column; /* Stack left and right boxes on mobile */
+    }
+
+    .leftNamePlate, .rightContentBox {
+        width: 100%; /* Make these take full width */
+        margin-left: 0;
+    }
+
+    /* Adjust tree visualization size */
+    .tree-container .tree {
+        height: 50px; /* Make it smaller */
+        width: 30px;
+    }
+
+    /* Adjust the navigation bar to stack items on smaller screens */
+    .navHoldBox {
+        flex-direction: column; /* Stack nav items */
+        gap: 10px;
+    }
+
+    /* About section: make text and content boxes responsive */
+    .aboutTextBox {
+        height: auto;
+        padding: 20px;
+    }
+
+    .aboutCenterBox {
+        width: 100%;
+    }
+
+    .rightTextAbout {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    /* Project section: adjust project box layout */
+    .projectInvisBox {
+        height: auto;
+    }
+
+    .projectDisplayBox {
+        flex-direction: column;
+    }
+
+    .projectPicBox1, .projectPicBox2 {
+        width: 100%; /* Make project images full width */
+        margin-left: 0;
+    }
+
+    /* Timeline section */
+    .timelineHoldBox {
+        height: auto;
+    }
+
+    .timelineTextBox {
+        flex-direction: column;
+    }
+
+    /* Contact section: make contact box layout more mobile-friendly */
+    .contactMainBox {
+        height: auto;
+        padding: 20px;
+    }
+
+    .contactContentBox {
+        flex-direction: column;
+    }
+
+    /* Make buttons and other elements responsive */
+    button, .submitBtn {
+        width: 100%; /* Make buttons take full width */
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Tablet and larger screens */
+@media (min-width: 769px) {
+    /* Ensure elements are in row layout for larger screens */
+    .landingMainBox {
+        flex-direction: row; /* Keep horizontal layout */
+        padding: 20px;
+    }
+
+    /* Adjust font sizes for larger screens */
+    .invisLetterBox {
+        font-size: 3rem;
+    }
+
+    .navHoldBox {
+        flex-direction: row; /* Horizontal layout for nav items */
+        gap: 20px;
+    }
+
+    .aboutTextBox, .aboutCenterBox {
+        padding: 30px;
+    }
+
+    .rightTextAbout {
+        font-size: 2rem;
+    }
+
+    /* Adjust project image boxes for larger screens */
+    .projectPicBox1, .projectPicBox2 {
+        width: 48%; /* Two images side by side */
+        margin-left: 2%;
+    }
+
+    /* Adjust timeline section for larger screens */
+    .timelineHoldBox {
+        height: auto;
+    }
+}
+
