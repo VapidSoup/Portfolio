@@ -90,7 +90,7 @@ const LandingPage = () => {
             <div className="projectDisplayBox">
               <div className="projectPicBox1"></div>
               <div className="projectDescriptionBox">
-                <div className="projectTitles">Venue Snap!</div>
+                <div className="projectTitles"><a href="https://github.com/infuriated-mink/semester4-venuesnap-frontend" target="_blank">Venue Snap!</a></div>
                 <div className="projectDescription">Venue Snap is a admin database system for adding, deleting, and changing information on venues around the world<br/>
                 Using AWS for hosting, & using Docker, MongoDB, and IntelliJ for Java, we created the entirety of the backend! For the front end, we used React. <br/>
                 I used Axios in order to connect the backend to the frontend!</div>
@@ -99,7 +99,7 @@ const LandingPage = () => {
             <div className="projectDisplayBox">
               <div className="projectPicBox2"></div>
               <div className="projectDescriptionBox">
-                <div className="projectTitles">Virtual Vault</div>
+                <div className="projectTitles"><a href="https://github.com/infuriated-mink/semester3-finalsprint" target="_blank">Virtual Vault!</a></div>
                 <div className="projectDescription">Virtual Vault is a database system used for a Virtual Game market. A simple website where people can sign up for new games! <br/>
                 This used PostgreSQL and React in short. A very simple and clean website!</div>
                 </div>

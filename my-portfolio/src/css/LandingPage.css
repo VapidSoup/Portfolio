@@ -180,7 +180,7 @@
     background-color: #ececec;
     display: flex;
     flex-direction: row;
-    gap: 150px;
+    gap: 5%;
     z-index: 2;
     justify-content: center;
     border-bottom: #979775 solid 2px;
